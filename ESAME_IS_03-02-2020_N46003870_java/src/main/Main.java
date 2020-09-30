@@ -33,7 +33,7 @@ public class Main
 			elaborato e7 = new elaborato("Java", tipoElaborato.COMPILATIVO, "P1", d3);
 			elaborato e8 = new elaborato("Python", tipoElaborato.PROGETTO, "P2", d3);
 			
-			//Carica gli elaborati
+			/*Carica gli elaborati*/
 			ges_elab.addElaborato(e1);
 			ges_elab.addElaborato(e2);
 			ges_elab.addElaborato(e3);
