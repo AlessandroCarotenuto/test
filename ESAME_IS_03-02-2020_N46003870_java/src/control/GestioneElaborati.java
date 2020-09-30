@@ -129,7 +129,7 @@ public class GestioneElaborati
 		
 		richiestaAssegnazioneDAO.create(t,s);
 		
-		TreeMap<Integer,elaborato> t = new TreeMap<Integer,elaborato>();
+		//TreeMap<Integer,elaborato> t = new TreeMap<Integer,elaborato>();
 		
 		richiestaAssegnazione r = new richiestaAssegnazione(t,s);
 		

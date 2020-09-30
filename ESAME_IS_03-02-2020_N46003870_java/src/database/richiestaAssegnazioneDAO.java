@@ -11,6 +11,7 @@ import entity.docente;
 import entity.tipoElaborato;
 import entity.elaborato;
 import entity.studente;
+//import entity.prefSpec;
 import entity.richiestaAssegnazione;
 import database.DBManager;
 import database.DAOException;
@@ -18,7 +19,7 @@ import database.docenteDAO;
 
 public class richiestaAssegnazioneDAO 
 {
-	public static prefSpec creaPref(TreeMap<Integer,elaborato> pref) throws DAOException
+/*	public static prefSpec creaPref(TreeMap<Integer,elaborato> pref) throws DAOException
 	{
 		Connection conn = DBManager.getConnection();
 		
@@ -42,9 +43,8 @@ public class richiestaAssegnazioneDAO
 			}		
 		}
 			
-	}
-}
-	
+	}*/
+
 	public static richiestaAssegnazione create(TreeMap<Integer, elaborato> mapPref, studente stud) throws DAOException 
 	{
 		richiestaAssegnazione ricAss = new richiestaAssegnazione(mapPref, stud);
@@ -58,7 +58,7 @@ public class richiestaAssegnazioneDAO
 		try( PreparedStatement stmt = conn.prepareStatement(sqlquery); )
 		{
 			stmt.setString(1, ricAss.getStudente().getMatricola());
-			stmt.setInt(2, );
+			//stmt.setInt(2, );
 			stmt.setString(3, stato);
 			
 			stmt.executeUpdate();
@@ -194,4 +194,3 @@ public class richiestaAssegnazioneDAO
 		}
 	}
 }
- */
